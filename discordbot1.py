@@ -36,7 +36,7 @@ async def help(ctx):
 async def memes(ctx):
     '''Список мемов'''
     emb = discord.Embed(title= 'Список мемов', colour= 0x9D88DF)
-    emb.add_field(name= 'Выбирай', value= '!хАчубёрнинг, !jojo, !дурка, !uno, !stonks, !ъуъ, !клоун')
+    emb.add_field(name= 'Выбирай', value= '!хАчубёрнинг, !jojo, !дурка, !nou, !stonks, !ъуъ, !клоун')
     await ctx.send(embed = emb)
 
 @Bot.command(pass_context= True)
@@ -106,6 +106,10 @@ async def ъуъ(ctx):
 @Bot.command(pass_context= True)
 async def клоун(ctx):
 	await ctx.send('Короче, я предлагаю перемирие, можем даже встретиться на твоей территории, например под красным куполом цирка, мы там даже вату купить можем, и договориться, что клоун не я, а ты\n \nhttps://cdn.discordapp.com/attachments/637893943081828364/687708649187180738/bnH3P4RE_jg.png')
+
+@Bot.command(pass_context= True)
+async def estonks(ctx):
+	await ctx.send('https://media.discordapp.net/attachments/637893943081828364/688088674700886101/91a76f99-fafd-43e3-98b4-e2d46d752569.png')
 
 #Команды для админов
 
