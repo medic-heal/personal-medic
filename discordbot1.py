@@ -214,3 +214,6 @@ async def user_unmute(ctx, member: discord.Member):
 #Запуск
 
 token = os.environ.get('BOT_TOKEN')
+
+Bot.run(str(token))
+
