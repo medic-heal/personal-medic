@@ -51,7 +51,7 @@ async def info(ctx, user: discord.Member):
 	if user.nick is not None:
 		emb.add_field(name= 'Измененный ник', value= user.nick)
 	if user.activity is not None:
-		emb.add_field(name= 'Играет в', value= user.activity)
+		emb.add_field(name= 'Играет в', value= user.activity.name)
 	emb.set_thumbnail(url= user.avatar_url)
 	emb.set_author(name= Bot.user.name, url= 'https://discordapp.com/oauth2/authorized')
 	await ctx.send(embed = emb)
